@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
+*{
+    font-family:Karla;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    /* border: red solid 1px; */
+}
+
+body{
+    background-color:hsl(148, 38%, 91%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 70px;
+}
+
+
+
+.form{
+    display: flex;
+    /* justify-content: center; */
+    /* align-items: center; */
+    flex-direction: column;
+    background-color:hsl(0, 0%, 100%) ;
+    max-width: 900px;
+    width: 650px;
+    gap: 20px;
+    padding: 30px;
+    border-radius: 10px;
+    
+}
+
+.form h1{
+    justify-content:flex-start;
+}
+
+.email{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex-wrap: wrap;
+    border-radius: 10px;
+}
+
+.email input{
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.nombreusuario{
+    display: flex;
+    gap: 10px;
+    max-width: 100%;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.lastname,
+.name{
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:100%;
+    padding: 15px;
+    margin-top: 10px;
+
+    
+}
+
+.caja{
+    width: 100%;
+}
+
+.query{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: ;
+}
+
+.query-border{
+    border-radius: 5px;
+    border-style: none;
+    border: hsl(186, 15%, 59%) solid 1px;
+    padding: 10px 20px;
+    width: 100%;
+    display: flex;
+    gap: 10px;
+}
+
+
+.mensaje{
+    border-radius: 10px;
+    resize: none;
+    padding: 10px;
+    width: 100%;
+}
+
+.acuerdo{
+    display: flex;
+    gap: 10px;
+    
+}
+.button{
+    height: 50px;
+    width: 100%;
+    border-radius: 10px;
+    background-color:hsl(169, 82%, 27%);
+    font-size: 16px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    border-style: none;
+    cursor: pointer;
+}
+
+.borderradius{
+    border-radius: 5px;
+    border-style: none;
+    border: hsl(186, 15%, 59%) solid 1px;
+    max-width: 900px;
+}
+
+@media(max-width:780px){
+  .form{
+    width: 80%;
+  }
+}
+
+
+@media(max-width:660px){
+    .nombreusuario{
+        flex-direction: column;
+    }
+}
+
+.query{
+    flex-direction: column;
+    width: 100%;
+}

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form class="form">
+      <h1>Contacto</h1>
+      <div class="nombreusuario">
+        <div class="caja">
+          <label for="name">Nombre *</label>
+          <input class="borderradius name" type="text" id="name" name="name" />
+        </div>
+        <div class="caja">
+          <label for="lastname">Apellido *</label>
+          <input
+            class="borderradius lastname"
+            type="text"
+            id="lastname"
+            name="lastname"
+          />
+        </div>
+      </div>
+
+      <div class="email">
+        <label for="email">Correo electronico *</label>
+        <input class="borderradius" type="text" id="email" name="email" />
+      </div>
+
+      <div class="query">
+        <div class="query-border">
+          <input type="radio" name="generalquery" id="generalenquery" />
+          <label for="generalenquery">General enquery</label>
+        </div>
+        <div class="query-border">
+          <input type="radio" name="supportrequest" id="supportrequest" />
+          <label for="supportrequest">Support request</label>
+        </div>
+      </div>
+      <label for="mensaje">Mensaje</label>
+      <textarea
+        class="mensaje"
+        name="mensaje"
+        id="mensaje"
+        cols="85"
+        rows="9"
+      ></textarea>
+      <div class="acuerdo">
+        <input type="checkbox" name="acuerdo" id="acuerdo" />
+        <label for="acuerdo"
+          >Estoy deacuerdo a recibir mails de esta pagina</label
+        >
+      </div>
+
+      <input class="button" type="button" value="Enviar" />
+    </form>
+  </body>
+</html>
