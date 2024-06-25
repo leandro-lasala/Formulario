@@ -128,12 +128,17 @@ body{
 
 @media(max-width:780px){
   .form{
-    width: 80%;
+    width: 100%;
   }
 }
 
 
 @media(max-width:660px){
+
+body{
+    margin: 5%;
+}
+
     .nombreusuario{
         flex-direction: column;
     }
